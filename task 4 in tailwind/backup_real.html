@@ -1,0 +1,519 @@
+<!doctype html>
+<html class="border-12 border-slate-200  border-t-0 sm:h-[3840px] md:h-[3040px] lg:h-[2100px]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+
+    }
+
+    @font-face {
+        font-family: 'myFont';
+        src: url('HKGrotesk-Bold.ttf');
+    }
+
+    @font-face {
+        font-family: 'myFont-two';
+        src: url('NotoSerif_Condensed-Bold.ttf');
+    }
+
+    #first_img {
+        width: 60%;
+
+        @media (max-width: 1600px) and (min-width:710px) {
+            height: 120px;
+        }
+
+        @media (max-width: 768px) and (min-width:640px) {
+            height: 100px;
+        }
+
+        @media (max-width: 640px) {
+            width: 100%;
+        }
+    }
+
+    #myFont {
+        font-family: myFont;
+    }
+
+    #two {
+        font-family: myFont-two;
+    }
+
+    #txt {
+        width: 40%;
+        text-align: center;
+        font-family: myFont;
+
+        @media (max-width: 640px) {
+            width: 100%;
+        }
+    }
+
+    #line {
+        font-size: 1.5rem;
+        color: #7b161e;
+
+        @media (max-width: 768px) and (min-width:640px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    #num {
+        font-size: 2.6rem;
+        margin-top: -15px;
+
+        @media (max-width: 768px) and (min-width:640px) {
+            margin-top: -12px;
+            font-size: 2.1rem;
+        }
+    }
+
+    #h3 {
+        font-size: 1.1rem;
+        margin-top: -15px;
+
+        @media (max-width: 768px) and (min-width:640px) {
+            font-size: 0.9rem;
+        }
+    }
+
+    #con {
+        @media (max-width: 640px) {
+            flex-direction: column;
+        }
+    }
+
+    #nav {
+        font-family: myFont;
+
+        @media (max-width: 640px) {
+            flex-direction: column;
+            height: 250px;
+            gap: 0px;
+            transition: 1s linear;
+        }
+    }
+
+    /* nav bar is completed now */
+    #Road_img {
+        width: 60%;
+        height: 400px;
+        background-image: url('images/form_bg.jpg');
+        background-size: cover;
+
+        @media (max-width:768px) {
+            width: 100%;
+        }
+    }
+
+    #banner {
+        @media (max-width:639px) {
+            width: 200%;
+            max-width: 200%;
+        }
+
+        @media (max-width:640px) and (min-width: 638px) {
+            width: 200%;
+            display: flex;
+            max-width: 200%;
+        }
+    }
+
+    #Q {
+        font-family: myFont-two;
+    }
+
+    .new {
+        margin-left: 38%;
+        margin-top: -66px;
+        transform: rotate(370deg);
+        position: absolute;
+        padding-right: 0;
+
+        @media (max-width : 1600px) and (min-width: 1024px) {
+            margin-left: 37%;
+        }
+
+        @media (max-width:1024px) and (min-width:768px) {
+            margin-left: 37%;
+            margin-right: 5%;
+        }
+
+        @media (max-width:768px) and (min-width:640px) {
+            margin-left: 66%;
+        }
+
+        @media (max-width:640px) and (min-width:500px) {
+            margin-left: 68%;
+        }
+    }
+
+    .new img {
+        width: 100%;
+        height: auto;
+
+        @media (max-width : 1600px) and (min-width: 1024px) {
+            width: 90%;
+        }
+
+        @media (max-width:1024px) and (min-width:768px) {
+            width: 100%;
+        }
+
+        @media (max-width:640px) and (min-width:500px) {
+            width: 70%;
+        }
+    }
+
+    #input {
+        width: 58%;
+
+        @media (max-width:1024px) and (min-width:768px) {
+            width: 50%;
+        }
+    }
+
+    #input_1 {
+        width: 58%;
+
+        @media (max-width:1024px) and (min-width:768px) {
+            width: 50%;
+        }
+
+        @media (max-width: 768px) and (min-width:500px) {
+            margin-left: -4px;
+        }
+    }
+
+    #img_con {
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    /* :first phase is complete successfully  */
+    #color {
+        background-color: #838383;
+    }
+</style>
+
+<body>
+    <div class="flex" id="con">
+        <img src="images/logo.png" alt="Logo" class="center" id="first_img">
+        <div class="mt-2" id="txt">
+            <h1 class="text-sm" id="line"><u>CALL OUR OFFICE NOW!</u></h1>
+            <h1 class="" id="num">540.433.6906</h1>
+            <p class="" id="h3">Get Your Question Answered Fast</p>
+        </div>
+    </div>
+    <div class="bg-red-800 text-amber-50 sm:pl-20 lg:pl-49 pr-5 text-lg text-center lg:text-1xl flex text-lg justify-around font-myFont h-15 items-center gap-1"
+        id="nav">
+        <ul class="click">
+            <li><a href="#">HOME</a></li>
+        </ul>
+        <ul class="click">
+            <li><a href="#">BIOGRAPHY</a></li>
+        </ul>
+        <ul class="click">
+            <li><a href="#">BLOG</a></li>
+        </ul>
+        <ul class="click">
+            <li><a href="#">AREAS WE SERVE</a></li>
+        </ul>
+        <ul class="click">
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="flex p-3" id="img_con">
+        <div class="w-1/2 mr-2 md:w-[50%] sm:w-[100%]"><img src="images/gurantee_banner.gif" alt="" class="h-[400px]"
+                width="100%" id="banner">
+        </div>
+        <div class="sm:w-[100%]" id="Road_img">
+
+            <h1 class=" text-4xl bg-red-700 w-42 h-11" id="Q">Question?</h1>
+            <p
+                class="font-myFont -mt-8 ml-55 sm:ml-55 text-1xl  lg:ml-55 text-3xl font-semibold -mt-8 md:text-2xl  xl:bg-rose-600">
+                Have a </p>
+            <h2
+                class="font-myFont text-[2rem] ml-79 sm:text-3xl md:ml-75 lg:ml-75 text-cyan-800 text-5xl font-semibold -mt-9">
+                Question</h2>
+            <h3 class="font-myFont ml-55 text-[29px] lg:ml-55 text-3xl font-semibold -mt-1 md:text-2xl sm:text-1xl">
+                About
+                Your Case?
+            </h3>
+            <p class="pl-2 font-medium md:pl-1">Enter your information and get your question answered quickly and
+                discreetly
+                or
+                call us
+                at:
+                <b>540.433.6906</b>
+            </p>
+            <div class="input" id="myFont">
+                <label class="ml-4 md:ml-2" id="myFont">NAME: <input type="text" id="input"
+                        class="bg-white border-black border-2 mt-1 ml-[3px]"></label><br>
+                <label class="ml-4 md:ml-2" id="input">EMAIL: <input type="text" id="input"
+                        class="bg-white border-black border-2 mt-1 ml-[2px]"></label><br>
+                <label class="ml-4 md:ml-1" id="input">PHONE: <input type="text" id="input_1"
+                        class="bg-white border-black border-2 mt-1 "></label>
+                <div class="new"><img src="images/confidential.png" alt=""></div><br>
+                <textarea name="" id="" placeholder="Tell us about your case here..."
+                    class="w-[90%] h-[90px] m-[12px] bg-white"></textarea><br>
+                <div class="flex ml-1.5 -m-2">
+                    <p class="font-sans text-sm h-6"><i>100% Privacy Guaranteed</i></p>
+                    <h3
+                        class="bg-red-700 text-1xl w-[50%] ml-[30px] lg:ml-16 text-center p-2 -mt-2 md:ml-5 text-[13px] sm:w-[40%] text-1xl  ml-36">
+                        Ask
+                        Us
+                        About Your
+                        Case
+                    </h3><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 m-4 md:grid-cols-2 lg:grid-cols-3">
+        <!-- First Section with Background Color -->
+        <div class="first p-4 min-h-85 border-r-1 border-slate-900">
+            <h2 class="text-4xl md:text-3xl lg:text-3xl" id="two">CHARGED WITH <e class="text-red-700">DUI?</e>
+            </h2>
+            <h3 class="text-2xl mt-1" id="myFont">FREE CASE EVALUATION</h3>
+            <p class="text-[1rem] mt-2" id="myFont">Being charged with a DUI <br> can be difficult. Get the help <br>
+                you
+                deserve.</p>
+            <p class="text-[1rem] mt-2" id="myFont">Click here to let us know <br> how we can help you with <br> your
+                case.
+            </p>
+            <div class="ml-[70%] -mt-40"><img src="images/paste_board.gif" alt="" class="w-30 lg:w-20"></div>
+            <div class="mt-1 ml-38 md:mt-5 lg:pt-[25px]">
+                <button class="w-35 bg-red-800 h-7 text-center text-white flex items-center justify-center">
+                    CLICK HERE
+                    <img src="images/bullet_white.gif" alt="" class="ml-2 mt-[2px] w-3">
+                </button>
+                <div class="-mt-7 w-50 -ml-6 border-b-1 border-slate-400">
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Section with Background Color -->
+        <div class="second p-4 border-r-1 border-slate-400">
+            <div class="">
+                <h2 class="text-4xl" id="two">LAW <e class="text-red-700">BLOG</e>
+                </h2>
+                <p class="text-[1rem] mt-2" id="myFont">Learn more about <br> Virginia Traffic Laws.</p>
+                <div class="mt-2 ml-10">
+                    <button class="w-35 bg-red-800 h-7 text-center text-white flex items-center justify-center">
+                        CLICK HERE
+                        <img src="images/bullet_white.gif" alt="" class="ml-2 mt-[2px] w-3">
+                    </button>
+                    <div class="-mt-7 w-50 -ml-10 border-b-1 border-slate-400">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-[55%] -mt-28 md:ml-[65%] pt-[30px] lg:w-29"><img src="images/pic1.gif" alt="" class="w-50">
+            </div>
+            <div class="">
+                <h2 class="text-4xl mt-12 md:mt-18 lg:border-t-1 border-slate-400" id="two">CASE <e
+                        class="text-red-700">
+                        RESULT
+                    </e>
+                </h2>
+                <p class="text-[1rem] mt-2" id="myFont">See how we help our client. <br>Read our latest case results.
+                </p>
+                <div class="mt-3 ml-10">
+                    <button class="w-35 bg-red-800 h-7 text-center text-white flex items-center justify-center">
+                        CLICK HERE
+                        <img src="images/bullet_white.gif" alt="" class="ml-2 mt-[2px] w-3">
+                    </button>
+                    <div class="-mt-7 w-50 -ml-10 border-b-1 border-slate-400">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-[55%] -mt-28 md:ml-[65%] pt-[30px] lg:w-29"><img src="images\order_icon.gif" alt=""
+                    class="w-50">
+            </div>
+        </div>
+
+        <!-- Third Section with Background Color -->
+        <div class="third p-3 h-88  sm:mt-6 justify-items-center md:col-span-3 justify-items-center lg:col-auto">
+            <div class="flex">
+                <div><img src="images/avo_rating_large.gif" alt="" class="w-40 lg:w-30 m-[-1px]"></div>
+                <div><img src="images/national_college_large.gif" alt="" class="w-38 -mt-5 ml-2 lg:w-28"></div>
+            </div>
+            <h1 class="text-4xl" id="two">CERTIFICATES & <br>
+                <e class="text-red-700">CREDENTIALS</e>
+            </h1>
+            <p class="" id="myFont">Keefer Law Firm has protected the <br> rights of Virginians for over 30 years.</p>
+            <div class="mt-2 ml-32">
+                <button class="w-35 bg-red-800 h-7 text-center text-white flex items-center justify-center">
+                    CLICK HERE
+                    <img src="images/bullet_white.gif" alt="" class="ml-2 mt-[2px] w-3">
+                </button>
+                <div class="-mt-7 w-50 -ml-10 border-b-1 border-slate-400">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=""><img src="images\hr_shadow.png" alt="" width="100%"></div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-1 m-4">
+        <div class="first p-4">
+            <h1 class="text-4xl" id="two">PARTICE <e class="text-red-700">AREAS</e>
+            </h1>
+            <div class="h-15 mt-2" id="color">
+                <H1 class="text-2xl text-white pl-[12px]" id="myFont">DUI & DWI</H1>
+                <div class="flex">
+                    <p class="ml-[55%] text-white" id="myFont">LEARN MORE <img src="images\bullet_red.gif" alt=""
+                            class="w-3 h-auto ml-26 -mt-[22px]">
+                    </p>
+
+                    <img src="images\menu_bg.gif" alt="" class="absolute left-0 -mt-8 ml-11 w-2 h-[60px]">
+                </div>
+            </div>
+            <div class="h-15 mt-2" id="color">
+                <H1 class="text-2xl text-white pl-[12px]" id="myFont">ROCKLESS DRIVING</H1>
+                <div class="flex">
+                    <p class="ml-[55%] text-white" id="myFont">LEARN MORE <img src="images\bullet_red.gif" alt=""
+                            class="w-3 h-auto ml-26 -mt-[22px]">
+                    </p>
+                    <img src="images\menu_bg.gif" alt="" class="absolute left-0 -mt-8 ml-11 w-2 h-[60px]">
+                </div>
+            </div>
+            <div class="h-15 mt-2" id="color">
+                <H1 class="text-2xl text-white pl-[12px]" id="myFont">SPEEDING TICKET</H1>
+                <div class="flex">
+                    <p class="ml-[55%] text-white" id="myFont">LEARN MORE <img src="images\bullet_red.gif" alt=""
+                            class="w-3 h-auto ml-26 -mt-[22px]">
+                    </p>
+                    <img src="images\menu_bg.gif" alt="" class="absolute left-0 -mt-8 ml-11 w-2 h-[60px]">
+                </div>
+            </div>
+            <div class="h-15 mt-2 relative" id="color">
+                <h1 class="text-2xl text-white pl-[12px]" id="myFont">TRAFFIC VIOLATIONS</h1>
+                <div class="flex">
+                    <p class="ml-[55%] text-white" id="myFont">LEARN MORE
+                        <img src="images\bullet_red.gif" alt="" class="w-3 h-auto ml-26 -mt-[22px]">
+                    </p>
+                </div>
+                <!-- This image is now fixed to the left side of the div -->
+                <img src="images\menu_bg.gif" alt="" class="absolute left-0 -mt-13 w-2 h-[60px]">
+            </div>
+
+            <h1 class="text-3xl mt-10 text-center" id="two">LEARN <e class="text-red-700">MORE</e> ABOUT</h1>
+            <br><br>
+            <p class="text-slate-400 text-3xl text-center mt-12" id="myFont">
+                MENU<br>
+                AREA<br>
+                HERE
+            </p>
+        </div>
+
+        <div class="two p-4">
+            <h1 class="text-3xl" id="two">&lt;H1&gt;PAGE TITLE HERE</h1>
+            <p class="mt-4 text-justify" id="myFont">Asunt in anim uis aute irure dolor in reprehenderit in voluptate
+                velit esse
+                cillum
+                dolore
+                eu fugiat null pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est
+                laborum.
+                Allamco laboris nisi ut aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu fugiat
+                nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Asunt in anim
+                uis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Allamco laboris nisi ut
+                aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint
+                occaecat cupidatat non proident, sunt in anim id est laborum.</p>
+        </div>
+
+        <div
+            class="three bg-cyan-300 p-4 md:col-span-2 pl-12 justify-items-end sm:col-span-2 pl-12 justify-items-center lg:col-auto justify-items-center">
+            <div class="">
+                <h1 class="text-4xl -ml-10" id="two">CLIENT <br>
+                    <e class="text-red-700">TESTIMONIALS</e>
+                </h1>
+                <p class="text-1xl -ml-10" id="myFont">Read what others say<br>about Keefar Law Firm.</p>
+                <div class="mt-2 ml-0">
+                    <button class="w-35 bg-red-800 h-7 text-center text-white flex items-center justify-center">
+                        CLICK HERE
+                        <img src="images/bullet_white.gif" alt="" class="ml-2 mt-[2px] w-3">
+                    </button>
+                    <div class="-mt-7 w-50 -ml-10 border-b-1 border-slate-400">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <h1 class="text-4xl -ml-10" id="two">DOWNLOAD <br>
+                        <e class="text-red-700">FREE</e> REPORTS
+                    </h1>
+                    <p class="text-1xl -ml-10" id="myFont">Discover truth about <br> Vergina Law.</p>
+                    <div class="mt-2 ml-0">
+                        <button class="w-35 bg-red-800 h-7 text-center text-white flex items-center justify-center">
+                            CLICK HERE
+                            <img src="images/bullet_white.gif" alt="" class="ml-2 mt-[2px] w-3">
+                        </button>
+                        <div class="-mt-7 w-50 -ml-10 border-b-1 border-slate-400">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <h1 class="text-4xl -ml-10" id="two">CONTACT <e class="text-red-700">OUR</e><br>OFFICES
+                        </h1>
+                        <p class="text-1xl -ml-10" id="myFont">Get your questions <br> answered right now.</p>
+                        <div class="mt-2 ml-0">
+                            <button class="w-35 bg-red-800 h-7 text-center text-white flex items-center justify-center">
+                                CLICK HERE
+                                <img src="images/bullet_white.gif" alt="" class="ml-2 mt-[2px] w-3">
+                            </button>
+                            <div class="-mt-7 w-50 -ml-10 border-b-1 border-slate-400">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class=" bg-yellow-500 justify-center md: justify-items-center sm: justify-items-center">
+                            <div class="mt-12">
+                                <img src="images\avo_rating_large.gif" alt="" class="w-40">
+                            </div>
+                            <div class="mt-5">
+                                <img src="images\national_college_large.gif" alt="" class="w-40">
+                            </div>
+                            <h2 class="text-3xl mt-6" id="two">
+                                FOLLOW <e class="text-red-700">US</e>
+                            </h2>
+                            <div class="w-50 -ml-5 mt-1">
+                                <img src="images\lf_bt_hr_shadow.png" alt="">
+                            </div>
+                            <div class="flex mt-3">
+                                <div class="flex gap-3">
+                                    <img src="images\fb_icon.gif" alt="">
+                                    <img src="images\google_icon.gif" alt="" class="google">
+                                    <img src="images\twitter_icon.gif" alt="" class="twitter">
+                                    <img src="images\linked_icon.gif" alt="" class="in">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h-[15px] bg-red-600 w-[100%] mt-6"></div>
+
+</body>
+
+</html>
